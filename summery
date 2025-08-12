@@ -1,0 +1,40 @@
+Data Ingestion Output Summary
+
+Config loaded:
+file_type: csv
+dataset_name: linkedin_job
+file_name: linkedin_job.csv
+table_name: linkedin_jobs_table
+inbound_delimiter: ,
+outbound_delimiter: |
+skip_leading_rows: 1
+columns:
+  - job_link
+  - last_processed_time
+  - got_summary
+  - got_ner
+  - is_being_worked
+  - job_title
+  - company
+  - job_location
+  - first_seen
+  - search_city
+  - search_country
+  - search_position
+  - job_level
+  - job_type
+  - job_skills
+  - job_summary
+
+Results:
+- Column name and column length validation passed
+- Total rows: 48,270,914
+- Total columns: 16
+- Input file size: 5,623.03 MB
+- Output file: linkedin_job.pipe.gz
+- Output file size: (check actual size after run, e.g. 1,234.56 MB)
+
+Notes:
+- Malformed rows were skipped during ingestion.
+- Column names were sanitized and validated against the YAML schema.
+- Output file is pipe-separated and

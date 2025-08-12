@@ -1,0 +1,24 @@
+file_type: csv
+dataset_name: linkedin_job
+file_name: linkedin_job.csv
+table_name: linkedin_jobs_table
+inbound_delimiter: ","
+outbound_delimiter: "|"
+skip_leading_rows: 1
+columns:
+  - job_link
+  - last_processed_time
+  - got_summary
+  - got_ner
+  - is_being_worked
+  - job_title
+  - company
+  - job_location
+  - first_seen
+  - search_city
+  - search_country
+  - search_position
+  - job_level
+  - job_type
+  - job_skills
+  - job_summary
